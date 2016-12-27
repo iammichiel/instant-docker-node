@@ -8,3 +8,5 @@ RUN apt-get update && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && \
     apt-get install yarn -y
+
+ENTRYPOINT ["/bin/sh", "-c"]
